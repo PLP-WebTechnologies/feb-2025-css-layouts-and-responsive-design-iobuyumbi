@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layouts & Responsive Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section with Flexbox -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="note">
+        <h2>What is Flexbox?</h2>
+        <p>
+          Flexbox (short for Flexible Box Layout) is a modern way to arrange
+          elements in a row or column. It's super helpful for things like
+          navigation bars because it automatically adjusts spacing and
+          alignment—even if the screen size changes. Think of it as a smart way
+          to organize items in a line!
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section class="intro">
+        <h1>Welcome to Our Responsive Webpage</h1>
+        <p>
+          This page is built using <strong>Flexbox</strong>,
+          <strong>Grid</strong>, and <strong>Media Queries</strong>—three
+          powerful CSS tools that help websites look good on phones, tablets,
+          and computers.
+        </p>
+      </section>
+
+      <!-- Grid Layout Section -->
+      <section class="content">
+        <h2>Grid Layout</h2>
+        <p>
+          Here’s a live example of a grid container. Grid lets us place items in
+          rows and columns—like putting content into boxes on a shelf.
+        </p>
+
+        <div class="grid-container">
+          <div class="grid-item">Item 1</div>
+          <div class="grid-item">Item 2</div>
+          <div class="grid-item">Item 3</div>
+          <div class="grid-item">Item 4</div>
+        </div>
+
+        <div class="note">
+          <h2>What is CSS Grid?</h2>
+          <p>
+            CSS Grid is a layout system that gives you control over both rows
+            and columns on your webpage. It’s perfect for building neat,
+            organized layouts—imagine a table where you can choose exactly how
+            big or small each cell is.
+          </p>
+        </div>
+      </section>
+
+      <!-- Media Query Explanation -->
+      <section class="media-query-info">
+        <h2>Responsive Design with Media Queries</h2>
+        <p>
+          Media queries are like condition checks for your website. They allow
+          your site to look different depending on the device's screen size. For
+          example, on a phone, you might want to stack elements vertically
+          instead of placing them side by side.
+        </p>
+        <p>
+          This means your website stays user-friendly and readable whether
+          you're on a small phone screen or a big desktop monitor.
+        </p>
+
+        <div class="example">
+          <p><strong>Media Query Example:</strong></p>
+          <code
+            >@media (max-width: 600px) { nav ul { flex-direction: column; }
+            }</code
+          >
+          <p>
+            This rule means: "If the screen width is 600 pixels or less, stack
+            the navigation links vertically instead of side by side."
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2025 Innocent Obuyumbi Website | Built with Flexbox, Grid & Media
+        Queries
+      </p>
+    </footer>
+  </body>
+</html>
